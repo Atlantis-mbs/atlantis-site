@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8" />
+  <title>Contact – Atlantis Liste BDE MBS</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <link rel="stylesheet" href="styles.css" />
+</head>
+
+<body>
+
+<header>
+  <div class="navbar">
+    <div class="logo">
+      <div class="logo-icon">A</div>
+      <div class="logo-text">Atlantis – Liste BDE MBS</div>
+    </div>
+    <nav>
+      <ul>
+        <li><a href="index.html">Accueil</a></li>
+        <li><a href="evenements.html">Événements</a></li>
+        <li><a href="partenaires.html">Partenaires</a></li>
+        <li><a class="active" href="contact.html">Contact</a></li>
+      </ul>
+    </nav>
+  </div>
+</header>
+
+<main class="container">
+  <section class="contact-grid">
+
+    <!-- Bloc formulaire -->
+    <div>
+      <h1 class="section-title">Contacter Atlantis</h1>
+      <p class="section-subtitle">
+        Une question, une idée d’événement, une proposition de partenariat ?
+        N’hésitez pas à nous écrire directement via ce formulaire.
+      </p>
+
+      <!-- FORMULAIRE FONCTIONNEL FORMSpree -->
+      <form action="https://formspree.io/f/xnnevqon" method="POST">
+
+        <div style="margin-bottom: 0.8rem;">
+          <label for="nom">Nom / Prénom</label>
+          <input 
+            type="text" 
+            id="nom" 
+            name="nom" 
+            placeholder="Votre nom" 
+            required 
+          />
+        </div>
+
+        <div style="margin-bottom: 0.8rem;">
+          <label for="email">Adresse e-mail</label>
+          <input 
+            type="email" 
+            id="email" 
+            name="email" 
+            placeholder="vous@exemple.com" 
+            required 
+          />
+        </div>
+
+        <div style="margin-bottom: 1rem;">
+          <label for="message">Message</label>
+          <textarea 
+            id="message" 
+            name="message" 
+            placeholder="Votre message..." 
+            required
+          ></textarea>
+        </div>
+
+        <button type="submit" class="btn btn-primary">Envoyer</button>
+      </form>
+
+      <p style="font-size: 0.8rem; color:#9fb3e0; margin-top:0.6rem;">
+        Nous vous répondrons dans les plus brefs délais.
+      </p>
+    </div>
+
+    <!-- Bloc informations & réseaux -->
+    <aside class="hero-card">
+      <h2>Réseaux & informations</h2>
+      <ul>
+        <li>Instagram : à venir</li>
+        <li>Tiktok : à venir</li>
+        <li>Facebook : à venir</li>
+        <li>Mail : atlantis.liste.bde@gmail.com</li>
+        <li>Campus : Montpellier Business School</li>
+      </ul>
+    </aside>
+
+  </section>
+</main>
+
+<footer>
+  <div class="container">
+    Atlantis – Liste BDE MBS · Nous contacter
+  </div>
+</footer>
+
+</body>
+</html>
