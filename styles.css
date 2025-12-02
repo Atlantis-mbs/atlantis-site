@@ -43,16 +43,10 @@ header {
   gap: 0.5rem;
 }
 
-.logo-icon {
-  width: 32px;
-  height: 32px;
-  border-radius: 999px;
-  border: 2px solid #23b3ff;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  font-weight: 700;
-  font-size: 0.9rem;
+.logo-image {
+  height: 38px;      /* taille du logo dans la barre */
+  width: auto;
+  display: block;
 }
 
 .logo-text {
@@ -553,9 +547,10 @@ footer {
   }
 @media (max-width: 640px) {
   .logo-text {
-    font-size: 0.7rem;
-    max-width: 60%;
-    white-space: normal;   /* autorise le retour à la ligne */
-    line-height: 1.2;
+    display: none;       /* on cache le texte sur mobile */
+  }
+
+  .logo-image {
+    height: 32px;        /* logo un peu plus petit sur mobile */
   }
 }
