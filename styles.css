@@ -447,3 +447,21 @@ footer {
     font-size: 1.3rem;
   }
 }
+
+.partner-header {
+  display: flex;
+  align-items: center;
+  gap: 0.6rem;
+  margin-bottom: 0.4rem;
+}
+
+.partner-logo {
+  display: block;
+  height: 40px;      /* hauteur fixe raisonnable */
+  width: auto;       /* garde les proportions du logo */
+  object-fit: contain;
+  border: none;
+  background: transparent;
+  border-radius: 0;
+  flex-shrink: 0;
+}
