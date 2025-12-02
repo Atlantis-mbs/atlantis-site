@@ -551,4 +551,11 @@ footer {
   .banner-atlantis-inner {
     padding: 0 1rem;
   }
+@media (max-width: 640px) {
+  .logo-text {
+    font-size: 0.7rem;
+    max-width: 60%;
+    white-space: normal;   /* autorise le retour à la ligne */
+    line-height: 1.2;
+  }
 }
