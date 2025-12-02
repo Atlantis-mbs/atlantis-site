@@ -554,3 +554,45 @@ footer {
     height: 32px;        /* logo un peu plus petit sur mobile */
   }
 }
+/* Titre mobile masqué par défaut sur grand écran */
+.logo-title-mobile {
+  display: none;
+}
+
+/* ---- Mobile ---- */
+@media (max-width: 640px) {
+
+  /* On cache le texte long du header */
+  .logo-text {
+    display: none !important;
+  }
+
+  /* On affiche le titre mobile */
+  .logo-title-mobile {
+    display: block;
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    top: 50%;
+    translate: 0 -50%;
+    font-size: 1rem;
+    font-weight: 700;
+    text-transform: uppercase;
+    color: #e8f0ff;
+    pointer-events: none; /* pour que le burger reste cliquable */
+  }
+
+  /* Ajuster la taille du logo */
+  .logo-image {
+    height: 32px;
+    width: auto;
+  }
+
+  /* S'assurer que le header reste propre */
+  .navbar {
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+}
