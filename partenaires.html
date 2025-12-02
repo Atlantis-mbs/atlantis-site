@@ -9,18 +9,6 @@
   <link rel="icon" type="image/x-icon" href="favicon.ico?v=2" />
 </head>
 
-<script>
-  const navToggle = document.querySelector('.nav-toggle');
-  const nav = document.querySelector('.navbar nav');
-
-  if (navToggle && nav) {
-    navToggle.addEventListener('click', () => {
-      nav.classList.toggle('nav-open');
-      navToggle.classList.toggle('nav-open');
-    });
-  }
-</script>
-
 <body>
 
 <header>
@@ -37,7 +25,7 @@
       <span></span>
     </button>
 
-    <nav>
+    <nav class="nav-main">
       <ul>
         <li><a href="index.html">Accueil</a></li>
         <li><a href="evenements.html">Événements</a></li>
@@ -261,5 +249,16 @@
   </div>
 </footer>
 
+<script>
+  const navToggle = document.querySelector('.nav-toggle');
+  const nav = document.querySelector('.nav-main');
+
+  if (navToggle && nav) {
+    navToggle.addEventListener('click', () => {
+      nav.classList.toggle('nav-open');
+      navToggle.classList.toggle('nav-open');
+    });
+  }
+</script>
 </body>
 </html>
