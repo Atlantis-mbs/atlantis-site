@@ -9,6 +9,18 @@
   <link rel="icon" type="image/x-icon" href="favicon.ico?v=2" />
 </head>
 
+<script>
+  const navToggle = document.querySelector('.nav-toggle');
+  const nav = document.querySelector('.navbar nav');
+
+  if (navToggle && nav) {
+    navToggle.addEventListener('click', () => {
+      nav.classList.toggle('nav-open');
+      navToggle.classList.toggle('nav-open');
+    });
+  }
+</script>
+
 <body>
 
 <header>
@@ -17,11 +29,19 @@
       <div class="logo-icon">A</div>
       <div class="logo-text">Atlantis – Liste BDE MBS</div>
     </div>
+
+    <!-- Bouton menu mobile -->
+    <button class="nav-toggle" aria-label="Ouvrir le menu">
+      <span></span>
+      <span></span>
+      <span></span>
+    </button>
+
     <nav>
       <ul>
         <li><a href="index.html">Accueil</a></li>
         <li><a href="evenements.html">Événements</a></li>
-        <li><a href="partenaires.html" class="active">Partenaires</a></li>
+        <li><a href="partenaires.html">Partenaires</a></li>
         <li><a href="contact.html">Contact</a></li>
       </ul>
     </nav>
